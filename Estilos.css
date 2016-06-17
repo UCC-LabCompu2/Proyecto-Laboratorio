@@ -1,3 +1,4 @@
+
 body
 {
     background-image:url("http://static1.squarespace.com/static/5651c8ede4b0a95fdb7dfa14/t/568d3208d8af1097862577dc/1452093965653/picjumbo.com_HNCK0343.jpg?format=1500w");
@@ -33,4 +34,12 @@ h1{
     border-radius: 7px;
 }
 
+#canvas
+{
+    background: #ffffff;
+    position:absolute;
+    margin-left: 400px;
+    margin-top:2px;
+
+}
 

@@ -1,25 +1,38 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <title>Optica Geometrica</title>
 
     <link rel="stylesheet" href="Estilos.css" type="text/css">
 
+    <script type="text/javascript" src="Programa.js"></script>
 
-    <style type="text/css"></style><style type="text/css"></style></head><body>
+
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+</head>
+<body onload=";">
 <h1> Optica Geometrica</h1>
 
-<button type="button" style="
+
+<button onclick="alerta()" type="button" style="
     position: absolute;
     top: 8px;
     right: 8px;
-">Ayuda</button>
 
-<button type="button" style="
+">Ayuda
+</button>
+
+
+<button onclick="alerta2()" type="button" style="
     position: absolute;
     top: 8px;
     right: 90px;
-">Acerca de</button>
+
+
+">Acerca de
+</button>
 
 
 <br>
@@ -28,49 +41,35 @@
 <fieldset style="
     border-color: darksalmon;
     border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
 ">
+    <canvas id="canvas" width="600" height="350"></canvas>
+
+
     <fieldset style="
     border-color: darksalmon;
     border-radius: 7px;
     margin-right: 1100px;
+    margin-left: auto;
 ">
+
+
         <div>
             Ingrese los Datos:
         </div>
 
-        <br>
 
         <br>
-        <div>
-            Forma
-        </div>
 
-        <select name="Forma" style="
-    width: 80px;
-">
-            <option value="Cubo">Cubo</option>
-            <option value="Prisma">Prisma</option>
-        </select>
-        <br>
-
-        <br>
-        <div>Cara
-        </div>
-
-        <select name="Cara" style="
-    width: 80px;
-">
-            <option value="Izquierda">Izquierda</option>
-            <option value="Derecha">Derecha</option>
-        </select>
         <br>
 
         <br>
         <div>Angulo
-        </div><input type="number" name="Angulo" class="miInput" placeholder="Ingrese Angulo" style="
+        </div>
+        <input type="number" name="Angulo" id="angulo" class="miInput" placeholder="Ingrese Angulo" style="
     width: 80px;
 ">
-
 
 
         <br>
@@ -79,7 +78,7 @@
         <div>Material
         </div>
 
-        <select name="Materiales" style="
+        <select   id="material"  name="Materiales" style="
     width: 80px;
 ">
             <option value="Vidrio">Vidrio</option>
@@ -93,7 +92,7 @@
         <br>
         <div>Indice 1
         </div>
-        <input type="number" name="Indice 1" class="miInput" placeholder="Indice 1" style="
+        <input type="number" name="Indice 1" id="indice" class="miInput" placeholder="Indice 1" style="
     width: 80px;
 ">
         <br>
@@ -112,15 +111,16 @@
         <br>
 
 
-
-
         <br>
         <div class="alineamiento" align="left">
-            <input type="button" value="Calcular" onclick="calcular()" "="">
+            <input type="button" value="Calcular" onclick="init();calcular();">
         </div>
-    </fieldset>
-</fieldset>
 
+
+    </fieldset>
+
+
+</fieldset>
 
 
 <br>
@@ -131,15 +131,16 @@
 
     Resultados:
     <br>
-    θ1
+    θ1=<div id="tita1"></div>
     <br>
-    θ2
+    θ2=<div id="tita2"></div>
     <br>
-    θ3
+    θ3=<div id="tita3"></div>
     <br>
-    θ4
+    θ4=<div id="tita4"></div>
     <br>
 
 
 </div>
-</body></html>
+</body>
+</html>
