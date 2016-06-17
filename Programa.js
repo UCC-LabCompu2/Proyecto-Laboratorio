@@ -6,7 +6,7 @@
 
 function init() {
     var canvas = document.getElementById("canvas");
-    canvas.width=canvas.width;
+    canvas.width = canvas.width;
     var ancho = canvas.width;
     var largo = canvas.height;
     if (canvas.getContext) {
@@ -16,10 +16,10 @@ function init() {
         ctx.fillRect(ancho / 2 - 50, largo / 2 - 50, 100, 100);
         ctx.moveTo(150, largo / 2);
         ctx.lineTo(ancho / 2 - 50, largo / 2);
-        ctx.strokeStyle="black";
+        ctx.strokeStyle = "black";
         ctx.stroke();
         ctx.closePath();
-        
+
         ctx.fill();
     }
 }
@@ -40,7 +40,7 @@ function rayo(tita1, tita2, tita3, tita4) {
 
         ctx.beginPath();
 
-        ctx.strokeStyle="red";
+        ctx.strokeStyle = "red";
         ctx.moveTo(x, largo / 2 - y);
         ctx.lineTo(ancho / 2 - 50, largo / 2);
         ctx.stroke();
@@ -53,16 +53,16 @@ function rayo(tita1, tita2, tita3, tita4) {
 
         ctx.moveTo(ancho / 2 - 50, largo / 2);
         ctx.lineTo(ancho / 2 + 50, y + largo / 2);
-        ctx.strokeStyle="red";
+        ctx.strokeStyle = "red";
         ctx.stroke();
 
         ctx.moveTo(ancho / 2 + 50, y + largo / 2);
-        k=y;
+        k = y;
         x = 100;
         y = x * Math.tan(tita4);
 
-        ctx.lineTo(x + ancho / 2 + 50, y + largo / 2+k);
-        ctx.strokeStyle="red";
+        ctx.lineTo(x + ancho / 2 + 50, y + largo / 2 + k);
+        ctx.strokeStyle = "red";
 
         ctx.stroke();
 
@@ -71,7 +71,7 @@ function rayo(tita1, tita2, tita3, tita4) {
 
 function calcular() {
     var n2 = document.getElementById("indice").value;
-    
+
     var n1 = 1;
 
     var tita1 = document.getElementById("angulo").value;
