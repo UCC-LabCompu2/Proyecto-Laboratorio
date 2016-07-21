@@ -6,10 +6,8 @@
 
     <link rel="stylesheet" href="Estilos.css" type="text/css">
 
-    <script type="text/javascript" src="Programa.js"></script>
-
-
     <style type="text/css"></style>
+
     <style type="text/css"></style>
 </head>
 <body onload=";">
@@ -24,19 +22,15 @@
 ">Ayuda
 </button>
 
-
 <button onclick="alerta2()" type="button" style="
     position: absolute;
     top: 8px;
     right: 90px;
 
-
 ">Acerca de
 </button>
 
-
 <br>
-
 
 <fieldset style="
     border-color: darksalmon;
@@ -54,37 +48,33 @@
     margin-left: auto;
 ">
 
-
         <div>
             Ingrese los Datos:
         </div>
 
-
+        <br>
         <br>
 
-        <br>
-
-        <br>
         <div>Angulo
         </div>
         <input type="number" name="Angulo" id="angulo" class="miInput" placeholder="Ingrese Angulo" style="
     width: 80px;
 ">
 
-
+        <br>
         <br>
 
-        <br>
         <div>Material
         </div>
 
-        <select   id="material"  name="Materiales" style="
+        <select id="material" name="Materiales" style="
     width: 80px;
 ">
+            <option value="Manual">Manual</option>
             <option value="Vidrio">Vidrio</option>
             <option value="Agua">Agua</option>
             <option value="Cristal">Cristal</option>
-            <option value="Acrilico">Acrilico
+            <option value="Diamante">Diamante
             </option>
         </select>
         <br>
@@ -96,12 +86,11 @@
     width: 80px;
 ">
         <br>
-
         <br>
         <div>Color
         </div>
 
-        <select name="Color" style="
+        <select name="Color" id="color" style="
                                             width: 80px;
                                             ">
             <option value="Rojo">Rojo</option>
@@ -109,7 +98,7 @@
             <option value="Azul">Azul</option>
         </select>
         <br>
-
+        <br>
         <br>
         <div class="alineamiento" align="left">
             <input type="button" value="Calcular" onclick="init();calcular();">
@@ -124,22 +113,31 @@
 
 <br>
 <div style="
-    color: tan;
+    color: #FBA328;
 ">
 
 
     Resultados:
     <br>
-    θ1=<div id="tita1"></div>
+    θ1=
+    <div id="tita1"></div>
+    °
     <br>
-    θ2=<div id="tita2"></div>
+    θ2=
+    <div id="tita2"></div>
+    °
     <br>
-    θ3=<div id="tita3"></div>
+    θ3=
+    <div id="tita3"></div>
+    °
     <br>
-    θ4=<div id="tita4"></div>
+    θ4=
+    <div id="tita4"></div>
+    °
     <br>
 
 
 </div>
+<script type="text/javascript" src="Programa.js"></script>
 </body>
 </html>
